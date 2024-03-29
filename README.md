@@ -11,11 +11,11 @@
     A type speed calculation software to conduct  multipliplayer typing competitions
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://speed-type-wnz9.onrender.com">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/Teamexe/Type-Dash/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/Teamexe/Type-Dash/issues">Request Feature</a>
   </p>
 </div>
 
