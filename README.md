@@ -101,7 +101,7 @@ Before running the projects download the following required softwares
 
 * node.js
   ```sh
-  download node.js from <https://nodejs.org>
+ [download node.js](https://nodejs.org)
   ```
 
 * mongoDb
