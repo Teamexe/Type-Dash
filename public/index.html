@@ -2,8 +2,374 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+    <title>Type Dash | Speed typing game</title>
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- favicon.png -->
+    <link rel="icon" href="images/favicon.ico" type="image/png" />
+    <!-- custom Stylesheet -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/glitch.css" />
+    <link rel="stylesheet" href="css/gradient.css" />
+    <link rel="stylesheet" href="css/switch.css" />
   </head>
-  <body></body>
+  <body>
+    <img src="images/left-hand.png" alt="left" class="left-hand" />
+    <img src="images/right-hand.png" alt="right" class="right-hand" />
+    <div class="background">
+      <div></div>
+      <div></div>
+    </div>
+
+    <div id="tsparticles"></div>
+    <!-- <div class="content"> -->
+    <nav class="navbar">
+      <img src="images/typing.png" alt="LOGO" class="typing-logo" />
+      <img
+        src="images/type-on-phone.png"
+        alt="type-on-phone"
+        class="typing-on-phone"
+      />
+    </nav>
+    <form id="entry-form" action="multiplayer.html" class="">
+      <div class="avatar-div focus-glassmorphism ">
+        <img
+          src="./images/arrows.png"
+          alt="arrow-keys"
+          class="arrows-indicator"
+        />
+        <div class="select-avatar"><p>SELECT AVATAR</p></div>
+        <div class="avatars">
+          <label>
+            <input
+              type="radio"
+              name="image"
+              value="avatar1"
+              id="avatar1"
+              class="avatar-select-input"
+            />
+            <img
+              src="images/avatars/avatar1.png"
+              alt="avatar1"
+              class="avatars-select-image"
+            />
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="image"
+              value="avatar2"
+              id="avatar2"
+              class="avatar-select-input"
+            />
+            <img
+              src="images/avatars/avatar2.png"
+              alt="avatar2"
+              class="avatars-select-image"
+            />
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="image"
+              value="avatar3"
+              id="avatar3"
+              class="avatar-select-input"
+            />
+            <img
+              src="images/avatars/avatar3.png"
+              alt="avatar3"
+              class="avatars-select-image"
+            />
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="image"
+              value="avatar4"
+              id="avatar4"
+              class="avatar-select-input"
+            />
+            <img
+              src="images/avatars/avatar4.png"
+              alt="avatar4"
+              class="avatars-select-image"
+            />
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="image"
+              value="avatar5"
+              id="avatar5"
+              class="avatar-select-input"
+            />
+            <img
+              src="images/avatars/avatar5.png"
+              alt="avatar5"
+              class="avatars-select-image"
+            />
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="image"
+              value="avatar6"
+              id="avatar6"
+              class="avatar-select-input"
+            />
+            <img
+              src="images/avatars/avatar6.png"
+              alt="avatar6"
+              class="avatars-select-image"
+            />
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="image"
+              value="avatar7"
+              id="avatar7"
+              class="avatar-select-input"
+            />
+            <img
+              src="images/avatars/avatar7.png"
+              alt="avatar7"
+              class="avatars-select-image"
+            />
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="image"
+              value="avatar8"
+              id="avatar8"
+              class="avatar-select-input"
+            />
+            <img
+              src="images/avatars/avatar8.png"
+              alt="avatar8"
+              class="avatars-select-image"
+            />
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="image"
+              value="avatar9"
+              id="avatar9"
+              class="avatar-select-input"
+            />
+            <img
+              src="images/avatars/avatar9.png"
+              alt="avatar9"
+              class="avatars-select-image"
+            />
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="image"
+              value="avatar10"
+              id="avatar10"
+              class="avatar-select-input"
+            />
+            <img
+              src="images/avatars/avatar10.png"
+              alt="avatar10"
+              class="avatars-select-image"
+            />
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="image"
+              value="avatar11"
+              id="avatar11"
+              class="avatar-select-input"
+            />
+            <img
+              src="images/avatars/avatar11.png"
+              alt="avatar11"
+              class="avatars-select-image"
+            />
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="image"
+              value="avatar12"
+              id="avatar12"
+              class="avatar-select-input"
+            />
+            <img
+              src="images/avatars/avatar12.png"
+              alt="avatar12"
+              class="avatars-select-image"
+            />
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="image"
+              value="avatar13"
+              id="avatar13"
+              class="avatar-select-input"
+            />
+            <img
+              src="images/avatars/avatar13.png"
+              alt="avatar13"
+              class="avatars-select-image"
+            />
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="image"
+              value="avatar14"
+              id="avatar14"
+              class="avatar-select-input"
+            />
+            <img
+              src="images/avatars/avatar14.png"
+              alt="avatar14"
+              class="avatars-select-image"
+            />
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="image"
+              value="avatar15"
+              id="avatar15"
+              class="avatar-select-input"
+            />
+            <img
+              src="images/avatars/avatar15.png"
+              alt="avatar15"
+              class="avatars-select-image"
+            />
+          </label>
+        </div>
+      </div>
+
+      <div class="username-identity glassmorphism">
+        <img src="images/tab.png" alt="tab" class="focus-tab" />
+        <div class="details-box">
+          <div class="details">
+            <p class="max-char-warning hidden">
+              maximum 10 characters allowed!
+            </p>
+            <label for="username">Username:</label>
+            <input
+              type="hidden"
+              name="Device"
+              value="Laptop"
+              class="Device-logged-in"
+            />
+            <input
+              type="text"
+              id="username"
+              name="username"
+              maxlength="10"
+              minlength="3"
+              autocomplete="off"
+              placeholder="nick-name/choose random"
+              required
+            />
+            <img src="images/alt.png" alt="alt" class="alt-key" />
+            <img src="images/ctrl.png" alt="alt" class="ctrl-key" />
+            <img
+              src="images/randomdice.png"
+              alt="dice-roll"
+              class="random-name-dice"
+            />
+            <label class="ui-switch">
+              <input type="checkbox" id="name-toggler" />
+              <div class="slider">
+                <div class="circle"></div>
+              </div>
+            </label>
+          </div>
+
+          <div class="details contact-page">
+            <img
+              src="images/modal-binding.png"
+              alt="modalbind"
+              class="rules-modal-bind hidden"
+            />
+
+            <div class="rules-modal hidden">
+              <h2>Exciting prize for winners</h2>
+              <ul>
+                <li>To participate, fill the contact else type none.</li>
+                <li>Format: Name/contact.</li>
+                <li>
+                  contact may be email id, phone no., insta id, or any other
+                  social media through which we can reach you out.
+                </li>
+              </ul>
+            </div>
+            <label for="identity" class="hidden">Contact:</label>
+            <input
+              type="text"
+              id="identity"
+              name="identity"
+              autocomplete="off"
+              placeholder="Name/contact"
+              value="none"
+              class="hidden"
+              required
+            />
+            <img
+              src="images/question-mark.png"
+              alt="question-mark"
+              class="question-mark hidden"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="btn-div">
+        <button class="submitBtn glassmorphism" onclick="Submit">
+          JOIN GAME
+          <img src="images/enter.png" alt="enter" class="enter-key" />
+        </button>
+      </div>
+    </form>
+    <!-- </div> -->
+
+    <footer class="foo">
+      <form action="multiplayer.html" id="log-in">
+        <input
+          type="number"
+          name="join-id"
+          id="user-join-id"
+          placeholder="Enter user-id"
+          max="999999"
+          min="100000"
+          required
+        />
+        <img src="images/log-in-bind.png" alt="loginbind" class="log-in-bind" />
+
+        <button type="submit">LOG IN</button>
+      </form>
+      <div class="glitch-wrapper">
+        <div class="glitch" data-glitch="copyright">copyright</div>
+        <i class="bx bx-copyright"></i>
+        <p class="current-year"></p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.0.6/tsparticles.bundle.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/usernames.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>

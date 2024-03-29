@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/Teamexe/Type-Dash#readme",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "socket.io": "^4.7.2",
+    "mongodb": "^6.0.0",
+    "mongoose": "^7.5.0",
+    "dotenv": "^16.3.1"
   }
 }

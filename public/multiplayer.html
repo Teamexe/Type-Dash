@@ -2,8 +2,300 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+    <title>Type Dash | Speed typing game</title>
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- favicon.png -->
+    <link rel="icon" href="images/favicon.ico" type="image/png" />
+    <!-- custom Stylesheet -->
+    <link rel="stylesheet" href="css/game.css" />
+    <link rel="stylesheet" href="css/sockets.css" />
+    <link rel="stylesheet" href="css/gradient.css" />
+    <link rel="stylesheet" href="css/glitch.css" />
+    <style>
+      .glitch-wrapper{
+        top: 9px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="leave-match-pop-up"></div>
+    <div class="wrong-id hidden">
+      <h1>WRONG JOIN ID....</h1>
+      <h1>press esc --> then Enter and try again</h1>
+    </div>
+    <div class="background-blend"></div>
+    <div class="background">
+      <div></div>
+      <div></div>
+    </div>
+    <img
+      src="./images/right-planet.png"
+      alt="right-planet"
+      class="right-planet"
+    />
+    <img
+      src="./images/left-planet.png"
+      alt="left-planet"
+      class="left-planet keyss"
+    />
+
+    <nav class="navbar">
+      <div class="userProfile">
+        <p class="current-user-username">Username</p>
+        <p>ID: #<span class="curr-user-id">123234</span></p>
+        <p></p>
+      </div>
+      <img src="images/leave-game.png" alt="leave-game" class="leave-game" />
+      <img
+        src="images/exit-esc-in-bind.png"
+        alt="exit"
+        class="leave-game-bind keyss"
+      />
+      <img src="./images/typing.png" alt="type-dash" class="type-dash keyss" />
+    </nav>
+
+    <div class="middle-container">
+      <!-- 50+83+40+30 = 203 -->
+
+      <!-- LeaderBoard Menu  -->
+      <div class="leader-board-menu">
+        <div class="ranking-section leaderboard-sections">
+          <div class="leaderboard-heading">
+            <button class="close-leaderboard">&times;</button>
+            <h1>LeaderBoard</h1>
+            <img
+              src="images/filter-white.png"
+              alt="filter"
+              class="filter-logo"
+            />
+            <img
+              src="images/ctrl.png"
+              alt="refresh"
+              class="refresh-bind keyss"
+            />
+          </div>
+          <div class="level-change">
+            <img
+              src="images/tab.png"
+              alt="tab-bind"
+              class="level-change-bind keyss"
+            />
+            <div class="easy leaderboard-level-chosen"><p>Easy</p></div>
+            <div class="medium"><p>Medium</p></div>
+          </div>
+          <div class="player-rankings-easy ">
+            <div class="rank-card">
+              <img
+                src="images/avatars/avatar13.png"
+                alt="user-avatar"
+                class="leaderboard-avatar"
+              />
+              <p class="rank-player-name">
+                Nameaefawf<span class="player-user-id">#101101</span>
+              </p>
+              <p class="rank-player-wpm">100 wpm</p>
+              <img src="images/computer.png" alt="device" class="device-icon" />
+            </div>
+          </div>
+
+          <div class="player-rankings-medium hidden"></div>
+        </div>
+        <div class="matches-section leaderboard-sections hidden">
+          <div class="recent-matches-heading">
+            <h1>Recent Matches</h1>
+          </div>
+          <div class="recent-matches-container">
+            <div class="match-card">
+              <div class="names">
+                <div class="name">
+                  <p class="recent-match-username">anirudh</p>
+                  <div class="match-score">
+                    <p class="match-rank-first match-rank">1<sup>st</sup></p>
+
+                    <p class="match-wpm">70</p>
+                    <img
+                      src="images/iphone.png"
+                      alt="device"
+                      class="match-player-device"
+                    />
+                  </div>
+                </div>
+                <div class="name">
+                  <p>anirudh</p>
+                  <div class="match-score">
+                    <p class="match-rank-second match-rank">2<sup>nd</sup></p>
+
+                    <p class="match-wpm">70</p>
+                    <img
+                      src="images/iphone.png"
+                      alt="device"
+                      class="match-player-device"
+                    />
+                  </div>
+                </div>
+                <div class="name">
+                  <p>anirudh</p>
+                  <div class="match-score">
+                    <p class="match-rank-third match-rank">3<sup>rd</sup></p>
+                    <p class="match-wpm">70</p>
+                    <img
+                      src="images/iphone.png"
+                      alt="device"
+                      class="match-player-device"
+                    />
+                  </div>
+                </div>
+                <div class="name">
+                  <p>anirudh</p>
+                  <div class="match-score">
+                    <p class="rest-rank match-rank">4<sup>th</sup></p>
+                    <p class="match-wpm">70</p>
+                    <img
+                      src="images/iphone.png"
+                      alt="device"
+                      class="match-player-device"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="match-level">Easy</div>
+              <div class="start-time">4:23pm</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- typing-container  -->
+      <div class="hero-container">
+        <div class="progress-space">
+          <img src="images/squares.png" alt="square1" class="square1" />
+          <img src="images/squares.png" alt="square2" class="square2" />
+          <div class="progress-bar-container">
+            <div id="progress-bar" class="progress-bar">
+              <div class="status-circle"></div>
+              <div class="player-name">
+                <p>YOU:</p>
+              </div>
+              <div class="avatar-path">
+                <img
+                  src="images/dividerFigma.png"
+                  alt="divider"
+                  class="progress-path"
+                />
+              </div>
+              <div class="user-curr-wpm" id="${user.id}wpm">0 wpm</div>
+            </div>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="circles">
+            <div class="red-circle"></div>
+            <div class="yellow-circle"></div>
+            <div class="green-circle"></div>
+          </div>
+          <div class="countdown hidden">
+            <p>starting in <span class="countdown-number">10</span>s...</p>
+          </div>
+          <div class="countdown-over hidden">
+            <p>start typing...</p>
+          </div>
+          <div class="showWpm details hidden">
+            <h3>Score: <strong id="wordsPerMinute">0</strong> wpm</h3>
+          </div>
+          <div class="chk_accuracy details hidden">
+            <h3 class="acurate">
+              Accuracy: <strong id="terminal-accuracy">0</strong>
+            </h3>
+          </div>
+          <!-- <div class="HighScore details hidden">
+            <h3>HighScore: <strong id="terminal-highscore">0</strong>wpm</h3>
+          </div> -->
+          <div class="dropdown">
+            <h3>Level:</h3>
+            <img
+              src="images/alt.png"
+              alt="difficulty-change"
+              class="difficulty-change-bind keyss"
+            />
+            <select name="cars" id="DifficultySelect">
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="time-up-warn hidden">
+            <p>Time Up!</p>
+          </div>
+          <div class="timerClass">
+            <h3><strong class="stopwatch">00:00</strong></h3>
+          </div>
+          <div class="caps-lock hidden">
+            <p><i class="bx bxs-lock-alt"></i> Caps Lock</p>
+          </div>
+          <div id="cursor" class="hidden"></div>
+          <div class="text-content-div">
+            <div class="dummy-cursor hidden"></div>
+            <p id="text-content">
+              Press Enter or Click on Get Ready button to start....
+            </p>
+          </div>
+          <input
+            type="text"
+            class="input-field"
+            autocorrect="off"
+            autocapitalize="off"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="foo">
+      <div class="leaderboard-button">
+        <img
+          src="images/log-in-bind.png"
+          alt="leaderboard"
+          class="leaderboard-bind keyss"
+        />
+        <img src="images/leaderboardIcon.png" alt="" class="leaderboard-logo" />
+      </div>
+      <button class="leave-match hidden" onclick="leaveMatchRequest()">
+        Leave match
+      </button>
+      <div class="player-status">
+        <img src="images/enter.png" alt="enter" class="ready-btn-bind keyss" />
+        <button class="ready-btn" onclick="onReadyBtnClick()">Get Ready</button>
+        <div class="insuff-player hidden">invite 1 more player</div>
+      </div>
+      <div class="glitch-wrapper">
+        <div class="glitch" data-glitch="copyright">copyright</div>
+        <i class="bx bx-copyright"></i>
+        <p class="current-year"></p>
+      </div>
+    </footer>
+
+    <!-- blur modal background -->
+    <div class="overlay hidden"></div>
+    <div class="transparent-overlay hidden"></div>
+
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+
+    <script src="js/leaderboard.js"></script>
+    <script src="js/multiplayer.js"></script>
+    <script src="js/socket.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.0.6/tsparticles.bundle.min.js"></script>
+    <script src="js/particles.js"></script>
+  </body>
 </html>
