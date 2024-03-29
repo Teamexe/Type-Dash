@@ -13,7 +13,7 @@
     <br />
     <a href="https://speed-type-wnz9.onrender.com">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/Teamexe/Type-Dash/issues">Report Bug</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
   </p>
