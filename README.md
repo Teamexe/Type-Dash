@@ -23,9 +23,7 @@
 
 ## About The Project
 
- <a href="https://github.com/anisharma07">
-    <img src="https://res.cloudinary.com/dwwajleyo/image/upload/v1711746296/posters_and_assets/Screenshot_2024-03-30_023406_vxpmet.png" alt="Logo">
-  </a>
+<img src="/public/images/github.png" alt="Logo">
 
 This is a dynamic speed typing website that allows users to create and participate in multiplayer typing matches. Users can challenge their friends in real-time typing competitions. The website provides a user-friendly interface where players can test their typing speed, accuracy, and improve their skills.
 
