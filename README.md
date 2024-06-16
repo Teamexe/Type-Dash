@@ -11,7 +11,7 @@
     A type speed calculation website to conduct  multipliplayer typing competitions
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="[https://github.com/othneildrew/Best-README-Template](https://speed-type-wnz9.onrender.com/)">View Demo</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
     ·
