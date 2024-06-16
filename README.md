@@ -82,6 +82,18 @@ This is a dynamic speed typing website that allows users to create and participa
    http://localhost:3000
    ```
 
+# USAGE TRICKS
+
+### Local Network Hosting
+
+- The device where the app is running, connect it to the wi-fi
+- get the ipv4 address of the network from wi-fi settings
+
+### ngrok
+
+- Install ngrok, create a temporary link to the port where app is running...
+- share with your friends and enjoy typing..
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
