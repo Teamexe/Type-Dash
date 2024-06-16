@@ -5,7 +5,7 @@
     <img src="https://res.cloudinary.com/dwwajleyo/image/upload/v1711745709/posters_and_assets/typedash_idsujz.png" alt="Logo" width="80">
   </a>
 
-  <h3 align="center">Type Dash - Multiplayer</h3>
+  <h3 align="center">Type Dash</h3>
 
   <p align="center">
     A type speed calculation website to conduct  multipliplayer typing competitions
