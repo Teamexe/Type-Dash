@@ -55,8 +55,6 @@
 
 This is a dynamic speed typing website that allows users to create and participate in multiplayer typing matches. Users can challenge their friends in real-time typing competitions. The website provides a user-friendly interface where players can test their typing speed, accuracy, and improve their skills.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ### Built With
 
 <div style="display: flex; gap: 8px;">
@@ -77,8 +75,6 @@ This is a dynamic speed typing website that allows users to create and participa
 <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="40" height="40"/> </a>
 
  </div>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
