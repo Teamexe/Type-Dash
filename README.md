@@ -86,11 +86,11 @@ This is a dynamic speed typing website that allows users to create and participa
 
 ### Local Network Hosting
 
-- The device where the app is running, connect it to the wi-fi --> [video](https://github.com/Teamexe/Type-Dash/edit/main/public/videos/configure.mp4)
-- get the ipv4 address of the network from wi-fi settings
-- now go to ```sh http://your_ipv4_address:3000 ```
+- The device where the app is running, connect it to the wi-fi 
+- get the ipv4 address of the network from wi-fi settings --> [video](https://youtu.be/VPnWTmDyf6Y)
+- now go to ```sh http://your_ipv4_address:3000```
 - share the link with your friends :)
-- NOTE: make sure that all devices share the same wi-fi network, on which the server is running.
+- NOTE: make sure that all devices share the same wi-fi network .i.e the network on which the server is running.
 
 ### ngrok
 
