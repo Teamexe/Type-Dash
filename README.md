@@ -8,7 +8,7 @@
   <h3 align="center">Type Dash</h3>
 
   <p align="center">
-    A type speed calculation website to conduct  multipliplayer typing competitions
+    A type speed calculation website to conduct  multiplayer typing competitions
     <br />
     <br />
     <a href="https://speed-type-wnz9.onrender.com">View Demo</a>
@@ -69,7 +69,7 @@ This is a dynamic speed typing website that allows users to create and participa
    ```sh
    npm install
    ```
-3. Type your mongoDb URI in .env file:
+3. Type your mongoDb URL in .env file:
    ```sh
    MONGODB_URI=mongodb://127.0.0.1:27017/TypeDash
    ```
@@ -88,7 +88,7 @@ This is a dynamic speed typing website that allows users to create and participa
 
 - The device where the app is running, connect it to the wi-fi 
 - get the ipv4 address of the network from wi-fi settings --> [video](https://github.com/Teamexe/Type-Dash/tree/main/public/videos)
-- now go to ```sh http://your_ipv4_address:3000```
+- now go to ```http://your_ipv4_address:3000```
 - share the link with your friends :)
 - NOTE: make sure that all devices share the same wi-fi network .i.e the network on which the server is running.
 
