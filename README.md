@@ -82,7 +82,7 @@ This is a dynamic speed typing website that allows users to create and participa
    http://localhost:3000
    ```
 
-# USAGE TRICKS
+## Playing Suggestions
 
 ### Local Network Hosting
 
