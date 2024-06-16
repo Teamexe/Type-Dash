@@ -99,7 +99,7 @@ This is a dynamic speed typing website that allows users to create and participa
  <img src="/public/images/ng-rok.png" alt="ng-rok">
 
 <br/>
-tip: You can also have on mobile typing races.
+tip: You can also have mobile typing races.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
