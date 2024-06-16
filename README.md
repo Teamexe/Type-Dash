@@ -86,13 +86,20 @@ This is a dynamic speed typing website that allows users to create and participa
 
 ### Local Network Hosting
 
-- The device where the app is running, connect it to the wi-fi
+- The device where the app is running, connect it to the wi-fi --> [video](https://github.com/Teamexe/Type-Dash/edit/main/public/videos/configure.mp4)
 - get the ipv4 address of the network from wi-fi settings
+- now go to ```sh http://your_ipv4_address:3000 ```
+- share the link with your friends :)
+- NOTE: make sure that all devices share the same wi-fi network, on which the server is running.
 
 ### ngrok
 
-- Install ngrok, create a temporary link to the port where app is running...
-- share with your friends and enjoy typing..
+- Install [ngrok](https://ngrok.com) and create a temporary link to the port where app is running...
+- share the link with your friends and enjoy typing...
+ <img src="/public/images/ng-rok.png" alt="ng-rok">
+
+<br/>
+tip: You can also have on mobile typing races.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
