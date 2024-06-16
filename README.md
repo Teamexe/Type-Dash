@@ -8,7 +8,7 @@
   <h3 align="center">Type Dash - Multiplayer</h3>
 
   <p align="center">
-    A type speed calculation software to conduct  multipliplayer typing competitions
+    A type speed calculation website to conduct  multipliplayer typing competitions
     <br />
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
