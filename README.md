@@ -16,6 +16,8 @@
     <a href="https://github.com/Teamexe/Type-Dash/issues">Report Bug</a>
     ·
     <a href="https://github.com/Teamexe/Type-Dash/issues">Request Feature</a>
+    ·
+    <a href="https://www.figma.com/design/PLxbmlfXFbZ33MHcqdyLHC/Type-Dash?node-id=0-1&t=BZFaK7r2I1Tiyvcj-1">UI Link</a>
   </p>
 </div>
 
