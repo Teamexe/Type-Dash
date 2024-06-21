@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://speed-type-wnz9.onrender.com">
     <img src="https://res.cloudinary.com/dwwajleyo/image/upload/v1711745709/posters_and_assets/typedash_idsujz.png" alt="Logo" width="80">
   </a>
 
@@ -11,7 +11,7 @@
     A type speed calculation website to conduct  multiplayer typing competitions
     <br />
     <br />
-    <a href="https://speed-type-wnz9.onrender.com">View Demo</a>
+    <a href="https://youtu.be/lEh0KG50AsI?si=DnHKlQqClXtbN8BN">View Demo</a>
     ·
     <a href="https://github.com/Teamexe/Type-Dash/issues">Report Bug</a>
     ·
@@ -27,7 +27,7 @@
 
 <img src="/public/images/github.png" alt="Logo">
 
-This is a dynamic speed typing website that allows users to create and participate in multiplayer typing matches. Users can challenge their friends in real-time typing competitions. The website provides a user-friendly interface where players can test their typing speed, accuracy, and improve their skills.
+This is a dynamic speed typing website that allows users to create and participate in multiplayer typing matches. Users can challenge their friends in real-time typing competitions. The website provides a user-friendly interface where players can test their typing speed, accuracy, and improve their skills. Checkout the live link [here](https://speed-type-wnz9.onrender.com) (Note: It might take few minutes to load due to server inactivity).
 
 ### Built With
 
